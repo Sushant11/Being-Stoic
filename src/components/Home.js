@@ -6,7 +6,7 @@ import Navbar from "./items/Navbar";
 import "../styles/App.css";
 import Stoic from "./items/Stoic";
 
-const { Header, Content } = Layout;
+const { Header, Content, Footer } = Layout;
 
 const Home = () => {
   return (
@@ -27,15 +27,6 @@ const Home = () => {
                 xs={{ span: 24 }}
                 lg={{ span: 12 }}
                 md={{ span: 8 }}
-                xl={{ span: 8}}
-                xxl={{ span: 8 }}
-              >
-                <Stoic />
-              </Col>
-              <Col
-                xs={{ span: 24 }}
-                lg={{ span: 12 }}
-                md={{ span: 8 }}
                 xl={{ span: 8 }}
                 xxl={{ span: 8 }}
               >
@@ -54,7 +45,16 @@ const Home = () => {
                 xs={{ span: 24 }}
                 lg={{ span: 12 }}
                 md={{ span: 8 }}
-                xl={{ span: 8}}
+                xl={{ span: 8 }}
+                xxl={{ span: 8 }}
+              >
+                <Stoic />
+              </Col>
+              <Col
+                xs={{ span: 24 }}
+                lg={{ span: 12 }}
+                md={{ span: 8 }}
+                xl={{ span: 8 }}
                 xxl={{ span: 8 }}
               >
                 <Stoic />
@@ -81,6 +81,9 @@ const Home = () => {
           </Col>
         </Row>
       </Content>
+      <Footer>
+        <span>© Being Stoic 2020</span>
+      </Footer>
     </Fragment>
   );
 };
