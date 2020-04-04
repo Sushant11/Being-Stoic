@@ -1,14 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React, { Suspense } from "react";
+import ReactDOM from "react-dom";
+import { Router } from "react-router-dom";
+
+import { Spin } from 'antd';
+import { LoadingOutlined } from '@ant-design/icons';
+
+
+import "./styles/index.css";
+import "antd/dist/antd.css";
+import App from "./containers/App";
+import history from "./utils/history";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <Suspense
+    fallback={<div className="loader-container"><Spin indicator={<LoadingOutlined style={{ fontSize: 24, color: 'black' }} spin />} /></div>}
+  >
+    <Router history={history}>
+      <App />
+    </Router>
+  </Suspense>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

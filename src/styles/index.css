@@ -1,0 +1,40 @@
+#root{
+  height: 100vh;
+  font-family: 'Patrick Hand', cursive;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+  font-weight: 100;
+}
+
+.loader-container{
+  margin-top: 1%;
+  text-align: center;
+}
+
+.ant-layout-header {
+    height: 10rem !important;
+    padding: 30px 50px !important;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 64px;
+    background: #FFFFFF !important;
+}
+
+h4.ant-typography {
+  line-height: 3 !important;
+}
+
+h1.ant-typography {
+  margin-bottom: 0.1em !important;
+}
+
+@media only screen and (max-width: 470px) {
+  .ant-layout-header {
+    height: 10rem !important;
+    padding: 30px 15px !important;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 64px;
+    background: #FFFFFF !important;
+}
+}

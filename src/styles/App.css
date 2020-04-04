@@ -1,0 +1,43 @@
+.being-stoic {
+  font-weight: 100;
+  letter-spacing: 6px;
+}
+.sub-heading {
+  font-weight: 100 !important;
+  letter-spacing: 3px !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-size: 15px !important;
+}
+
+.icons {
+  line-height: 1.4;
+  float: right !important;
+}
+
+.icons button {
+  background: #f3f3f3 !important;
+  border: none;
+  color: black;
+  margin-right: 5px;
+}
+
+.fire .ant-btn:hover {
+  color: #f75a0d !important ;
+  background-color: #fff;
+  border-color: #f75a0d !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .float-icon {
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .sub-heading {
+    font-weight: 100 !important;
+    letter-spacing: 3px !important;
+    color: rgba(0, 0, 0, 0.6) !important;
+    font-size: 10px !important;
+  }
+}
