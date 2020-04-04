@@ -17,7 +17,7 @@ const Stoic = () => {
       hoverable
     >
       {MARCUS ? (
-        <img src={MARCUS} alt="Marcus" className="stoic-img"></img>
+        <img src={MARCUS} alt="Marcus" id='stoic-img' className="stoic-img"></img>
       ) : (
         <Spin
           indicator={

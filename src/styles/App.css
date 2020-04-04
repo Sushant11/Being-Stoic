@@ -78,6 +78,7 @@
     letter-spacing: 3px !important;
     color: rgba(0, 0, 0, 0.6) !important;
     font-size: 8px !important;
+    text-align: center;
   }
   .being-stoic {
     font-weight: 100;
@@ -85,6 +86,12 @@
     background-image: url("../images/headBG.svg");
     background-repeat: no-repeat;
     background-position-y: 13px;
-    background-position-x: 14px;
+    background-position-x: 100px;
+    text-align: center;
+  }
+  .icons {
+    line-height: 1.4;
+    float: right !important;
+    text-align: center;
   }
 }
