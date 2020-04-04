@@ -39,28 +39,37 @@
 
 .card-attr {
   background-color: #f3f3f3;
-  font-weight: bold;
-  font-size: 15px;
-  margin:auto;
+  margin: auto;
   letter-spacing: 5px;
   text-align: center;
   box-shadow: 0px 1px 3px 0px #ababab;
   border-radius: 3px;
   border-radius: 3px;
-  font-family: "Patrick Hand SC", cursive;
   height: 10rem;
   margin-top: 7rem;
   margin-bottom: 5rem;
 }
 
-.stoic-name {
-  margin-top: 3rem !important;
+.card-attr:hover {
+  transform: scale(1);
 }
 
-.stoic-img{
+.stoic-date {
+  color: #00000070;
+}
+
+.stoic-name {
+  margin-top: 4rem !important;
+  font-weight: bold;
+  margin-bottom: 1px;
+  font-size: 15px;
+  font-family: "Patrick Hand SC", cursive;
+}
+
+.stoic-img {
   position: absolute;
-    top: -7rem;
-    right: 3.5rem;
+  top: -7rem;
+  right: 3.5rem;
 }
 
 @media only screen and (max-width: 480px) {

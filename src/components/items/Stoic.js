@@ -15,7 +15,7 @@ const Stoic = () => {
     >
       <img src={MARCUS} alt="Marcus" className="stoic-img"></img>
       <p className='stoic-name'>MARCUS AURELIUS</p>
-      <p>121-180 AD</p>
+      <p className='stoic-date'>121-180 AD</p>
     </Card>
   );
 };
