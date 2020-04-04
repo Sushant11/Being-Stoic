@@ -1,6 +1,10 @@
 .being-stoic {
   font-weight: 100;
   letter-spacing: 6px;
+  background-image: url("../images/headBG.svg");
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+    background-position-x: 40px;
 }
 .sub-heading {
   font-weight: 100 !important;
@@ -33,11 +37,19 @@
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 480px) {
   .sub-heading {
     font-weight: 100 !important;
     letter-spacing: 3px !important;
     color: rgba(0, 0, 0, 0.6) !important;
     font-size: 10px !important;
+  }
+  .being-stoic {
+    font-weight: 100;
+    letter-spacing: 6px;
+    background-image: url("../images/headBG.svg");
+    background-repeat: no-repeat;
+    background-position-y: 13px;
+      background-position-x: 14px;
   }
 }

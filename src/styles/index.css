@@ -29,7 +29,7 @@ h1.ant-typography {
   margin-bottom: 0.1em !important;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 637px) {
   .ant-layout-header {
     height: 10rem !important;
     padding: 10px 15px !important;
@@ -37,4 +37,8 @@ h1.ant-typography {
     line-height: 64px;
     background: #FFFFFF !important;
 }
+}@media only screen and (max-width: 480px) {
+  h1.ant-typography {
+    font-size: 30px !important;
+  }
 }
