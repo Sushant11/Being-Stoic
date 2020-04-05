@@ -30,6 +30,11 @@
   background-color: #fff;
   border-color: #f75a0d !important;
 }
+.fire .ant-btn:focus {
+  color: #f75a0d !important ;
+  background-color: #fff;
+  border-color: #f75a0d !important;
+}
 
 @media only screen and (min-width: 600px) {
   .float-icon {

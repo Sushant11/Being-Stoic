@@ -6,7 +6,9 @@ import MARCUS from "../../images/marcus.svg";
 // const { Meta } = Card;
 
 const Stoic = (props) => {
-  const { name, life } = props;
+  const { name, life, img } = props;
+
+
   return (
     <Card
       bordered={false}
