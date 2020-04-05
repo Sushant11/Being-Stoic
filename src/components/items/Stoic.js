@@ -1,13 +1,8 @@
 import React from "react";
 import { Card } from "antd";
 
-import MARCUS from "../../images/marcus.svg";
-
-// const { Meta } = Card;
-
 const Stoic = (props) => {
   const { name, life, img } = props;
-
 
   return (
     <Card
@@ -16,7 +11,7 @@ const Stoic = (props) => {
       className="card-attr"
       hoverable
     >
-      <img src={MARCUS} alt="Marcus" id="stoic-img" className="stoic-img"></img>
+      <img src={img} alt="Marcus" id="stoic-img" className="stoic-img"></img>
 
       <p className="stoic-name">{name}</p>
 
