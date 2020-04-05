@@ -7,7 +7,7 @@ const App = () => (
   <Fragment>
     <Switch>
       <Route exact path="/" component={AsyncHome}></Route>
-      <Route exact path="/quote" component={AsyncQuote}></Route>
+      <Route exact path="/quotes/:id" component={AsyncQuote}></Route>
       <Route component={AsyncNotFound} />
     </Switch>
   </Fragment>

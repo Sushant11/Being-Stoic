@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Layout } from "antd";
+import { withRouter } from "react-router-dom";
 
 import Navbar from "./items/Navbar";
 
@@ -7,12 +8,14 @@ import "../styles/App.css";
 
 const { Header } = Layout;
 
-const Quote = () => {
+const Quote = (props) => {
   return (
-    <Header>
-      <Navbar/>
-    </Header>
+    <Fragment>
+      <Header>
+        <Navbar />
+      </Header>
+    </Fragment>
   );
 };
 
-export default Quote;
+export default withRouter(Quote);

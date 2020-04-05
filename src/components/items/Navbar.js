@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { Button, Typography, Row, Col } from "antd";
 import { FireOutlined, HomeOutlined, FilterOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 const { Title } = Typography;
 
@@ -39,16 +40,17 @@ const Navbar = () => {
           xxl={{ span: 4 }}
           className="icons"
         >
+          <Link to="/">
+            <Button
+              className="float-icon"
+              shape="circle"
+              icon={<HomeOutlined />}
+              size="default"
+            />
+          </Link>
           <span className="fire float-icon">
             <Button shape="circle" icon={<FireOutlined />} size="default" />{" "}
           </span>
-
-          {/* <Button
-            type="primary"
-            shape="circle"
-            icon={<HomeOutlined />}
-            size='small'
-          /> */}
           <Button
             shape="circle"
             className="float-icon"

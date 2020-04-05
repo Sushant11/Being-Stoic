@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import { Row, Col, Layout } from "antd";
 
+import { Link, withRouter } from "react-router-dom";
+
 import Navbar from "./items/Navbar";
 
 import "../styles/App.css";
@@ -34,11 +36,13 @@ const Home = (props) => {
                     xxl={{ span: 8 }}
                     key={stoic.id}
                   >
-                    <Stoic
-                      name={stoic.name}
-                      life={stoic.life}
-                      img={stoic.src}
-                    />
+                    <Link to={`/quotes/${stoic.id}`}>
+                      <Stoic
+                        name={stoic.name}
+                        life={stoic.life}
+                        img={stoic.src}
+                      />
+                    </Link>
                   </Col>
                 );
               })}
@@ -53,4 +57,4 @@ const Home = (props) => {
   );
 };
 
-export default Home;
+export default withRouter(Home);

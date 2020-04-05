@@ -20,6 +20,7 @@ ReactDOM.render(
             <LoadingOutlined style={{ fontSize: 24, color: "black" }} spin />
           }
         />
+        <div>Thinking ...</div>
       </div>
     }
   >
