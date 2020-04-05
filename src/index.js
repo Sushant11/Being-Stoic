@@ -2,9 +2,8 @@ import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
 import { Router } from "react-router-dom";
 
-import { Spin } from 'antd';
-import { LoadingOutlined } from '@ant-design/icons';
-
+import { Spin } from "antd";
+import { LoadingOutlined } from "@ant-design/icons";
 
 import "./styles/index.css";
 import "antd/dist/antd.css";
@@ -14,7 +13,15 @@ import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <Suspense
-    fallback={<div className="loader-container"><Spin indicator={<LoadingOutlined style={{ fontSize: 24, color: 'black' }} spin />} /></div>}
+    fallback={
+      <div className="loader-container">
+        <Spin
+          indicator={
+            <LoadingOutlined style={{ fontSize: 24, color: "black" }} spin />
+          }
+        />
+      </div>
+    }
   >
     <Router history={history}>
       <App />

@@ -1,14 +1,12 @@
 import React from "react";
 import { Card } from "antd";
 
-import { Spin } from "antd";
-import { LoadingOutlined } from "@ant-design/icons";
-
 import MARCUS from "../../images/marcus.svg";
 
 // const { Meta } = Card;
 
-const Stoic = () => {
+const Stoic = (props) => {
+  const { name, life } = props;
   return (
     <Card
       bordered={false}
@@ -16,18 +14,11 @@ const Stoic = () => {
       className="card-attr"
       hoverable
     >
-      {MARCUS ? (
-        <img src={MARCUS} alt="Marcus" id='stoic-img' className="stoic-img"></img>
-      ) : (
-        <Spin
-          indicator={
-            <LoadingOutlined style={{ fontSize: 20, color: "black" }} spin />
-          }
-        />
-      )}
+      <img src={MARCUS} alt="Marcus" id="stoic-img" className="stoic-img"></img>
 
-      <p className="stoic-name">MARCUS AURELIUS</p>
-      <p className="stoic-date">121-180 AD</p>
+      <p className="stoic-name">{name}</p>
+
+      <p className="stoic-date">{life}</p>
     </Card>
   );
 };
