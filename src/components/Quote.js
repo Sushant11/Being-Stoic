@@ -2,14 +2,14 @@ import React, { Fragment } from "react";
 import { Layout, Row, Col } from "antd";
 import { withRouter } from "react-router-dom";
 
-import Navbar from "./Items/Navbar";
-import Info from "./Items/Info";
+import Navbar from "./items/Navbar";
+import Info from "./items/Info";
 
 import "../styles/App.css";
 
 import stoics from "../db/stoics";
 import quotes from "../db/quotes";
-import QuoteCard from "./Items/QuoteCard";
+import QuoteCard from "./items/QuoteCard";
 
 const { Header, Content , Footer} = Layout;
 const Quote = (props) => {
