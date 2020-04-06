@@ -30,7 +30,7 @@ const Info = (props) => {
     <Fragment>
       <Row className="detail-margin">
         <Col
-          xs={{ span: 5, offset: 0 }}
+          xs={{ span: 6, offset: 0 }}
           sm={{ span: 3, offset: 0 }}
           md={{ span: 2,offset: 0 }}
           lg={{ span: 2, offset: 0 }}
@@ -41,12 +41,12 @@ const Info = (props) => {
           <Avatar src={data.src} size={48} />
         </Col>
         <Col
-          xs={{ span: 8 }}
-          sm={{ span: 8 }}
-          md={{ span: 8 }}
-          lg={{ span: 8 }}
-          xl={{ span: 8 }}
-          xxl={{ span: 8 }}
+          xs={{ span: 18 }}
+          sm={{ span: 14 }}
+          md={{ span: 10 }}
+          lg={{ span: 10 }}
+          xl={{ span: 10 }}
+          xxl={{ span: 10 }}
           className="info-detail"
         >
           <Row>
