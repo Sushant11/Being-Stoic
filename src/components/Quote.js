@@ -15,7 +15,7 @@ import ReactGA from "react-ga";
 
 const initializeReactGA = () => {
   ReactGA.initialize("UA-162898252-1");
-  ReactGA.pageview("/");
+  ReactGA.pageview("/quotes/");
 };
 
 const { Header, Content, Footer } = Layout;
