@@ -17,7 +17,7 @@ ReactDOM.render(
       <div className="loader-container">
         <Spin
           indicator={
-            <LoadingOutlined style={{ fontSize: 24, color: "black" }} spin />
+            <LoadingOutlined style={{ fontSize: 24, color: "black", marginTop: '2rem' }} spin />
           }
         />
         <div>Thinking ...</div>

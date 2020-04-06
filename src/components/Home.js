@@ -3,10 +3,10 @@ import { Row, Col, Layout } from "antd";
 
 import { Link, withRouter } from "react-router-dom";
 
-import Navbar from "./items/Navbar";
+import Navbar from "./Items/Navbar";
 
 import "../styles/App.css";
-import Stoic from "./items/Stoic";
+import Stoic from "./Items/Stoic";
 
 const { Header, Content, Footer } = Layout;
 

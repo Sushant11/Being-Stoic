@@ -1,11 +1,12 @@
 #root{
   height: 100vh;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Patrick Hand', sans-serif, cursive;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: black;
   font-weight: 100;
+  /* overflow: hidden; */
 }
 
 .loader-container{
@@ -50,4 +51,25 @@ Footer{
   h1.ant-typography {
     font-size: 30px !important;
   }
+}
+
+/*--cUSTOM SCROLLBAR--*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(204, 204, 204);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(196, 196, 196);
 }

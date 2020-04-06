@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Button, Typography, Row, Col } from "antd";
+import { Button, Typography, Row, Col, Tooltip } from "antd";
 import { FireOutlined, HomeOutlined, FilterOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 
@@ -40,23 +40,29 @@ const Navbar = () => {
           xxl={{ span: 4 }}
           className="icons"
         >
-          <Link to="/">
+          <Tooltip title="Toggle Night Mode">
+            <span className="fire float-icon">
+              <Button shape="circle" icon={<FireOutlined />} size="default" />{" "}
+            </span>
+          </Tooltip>
+          {/* <Tooltip title="Filter">
             <Button
-              className="float-icon"
               shape="circle"
-              icon={<HomeOutlined />}
+              className="float-icon"
+              icon={<FilterOutlined />}
               size="default"
             />
+          </Tooltip> */}
+          <Link to="/">
+            <Tooltip title="Home">
+              <Button
+                className="float-icon"
+                shape="circle"
+                icon={<HomeOutlined />}
+                size="default"
+              />
+            </Tooltip>
           </Link>
-          <span className="fire float-icon">
-            <Button shape="circle" icon={<FireOutlined />} size="default" />{" "}
-          </span>
-          <Button
-            shape="circle"
-            className="float-icon"
-            icon={<FilterOutlined />}
-            size="default"
-          />
         </Col>
       </Row>
     </Fragment>

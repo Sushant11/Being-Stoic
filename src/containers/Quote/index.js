@@ -4,7 +4,6 @@ import { Switch, Route } from "react-router-dom";
 import Quote from "../../components/Quote";
 
 const index = ({ match }) => {
-  console.log("match :", match);
   return (
     <Fragment>
       <Switch>

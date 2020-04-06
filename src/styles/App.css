@@ -77,6 +77,45 @@
   right: 3.5rem;
 }
 
+.ant-avatar > img {
+  object-fit: contain !important;
+}
+
+.padding-avatar {
+  padding-top: 5px;
+}
+
+.info-name {
+  font-family: "Patrick Hand SC", cursive;
+  font-size: 1.3rem;
+}
+
+.info-date {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.info-detail {
+  margin-left: -10px;
+}
+
+.card-attr-quote {
+  background-color: #f3f3f3;
+  margin: auto;
+  letter-spacing: 1px;
+  text-align: center;
+  box-shadow: 0px 1px 3px 0px #ababab;
+  border-radius: 3px;
+  border-radius: 3px;
+  height: auto;
+  margin-top: 1rem;
+  color: black;
+  font-size: 1em;
+}
+
+.detail-margin{
+  margin-bottom: 1rem;
+}
+
 @media only screen and (max-width: 480px) {
   .sub-heading {
     font-weight: 100 !important;

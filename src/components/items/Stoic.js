@@ -8,10 +8,15 @@ const Stoic = (props) => {
     <Card
       bordered={false}
       style={{ width: 250 }}
-      className="card-attr"
+      className="card-attr animated fadeIn"
       hoverable
     >
-      <img src={img} alt="Marcus" id="stoic-img" className="stoic-img"></img>
+      <img
+        src={img}
+        alt="Marcus"
+        id="stoic-img"
+        className="stoic-img animated fadeIn slow"
+      ></img>
 
       <p className="stoic-name">{name}</p>
 
