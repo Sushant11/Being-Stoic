@@ -28,11 +28,27 @@ const Info = (props) => {
   }
   return (
     <Fragment>
-      <Row className='detail-margin'>
-        <Col span={2} className="padding-avatar animated fadeIn slow">
+      <Row className="detail-margin">
+        <Col
+          xs={{ span: 5, offset: 0 }}
+          sm={{ span: 3, offset: 0 }}
+          md={{ span: 2,offset: 0 }}
+          lg={{ span: 2, offset: 0 }}
+          xl={{ span: 2, offset: 0 }}
+          xxl={{ span: 2, offset: 0 }}
+          className="padding-avatar animated fadeIn slow"
+        >
           <Avatar src={data.src} size={48} />
         </Col>
-        <Col span={6} className="info-detail">
+        <Col
+          xs={{ span: 8 }}
+          sm={{ span: 8 }}
+          md={{ span: 8 }}
+          lg={{ span: 8 }}
+          xl={{ span: 8 }}
+          xxl={{ span: 8 }}
+          className="info-detail"
+        >
           <Row>
             <Col span={24} className="info-name">
               {data.name}

@@ -10,6 +10,7 @@ import "antd/dist/antd.css";
 import App from "./containers/App";
 import history from "./utils/history";
 import * as serviceWorker from "./serviceWorker";
+import { ThemeProvider } from "./utils/ThemeContext";
 
 ReactDOM.render(
   <Suspense
@@ -17,7 +18,10 @@ ReactDOM.render(
       <div className="loader-container">
         <Spin
           indicator={
-            <LoadingOutlined style={{ fontSize: 24, color: "black", marginTop: '2rem' }} spin />
+            <LoadingOutlined
+              style={{ fontSize: 24, color: "black", marginTop: "2rem" }}
+              spin
+            />
           }
         />
         <div>Thinking ...</div>
@@ -25,7 +29,9 @@ ReactDOM.render(
     }
   >
     <Router history={history}>
-      <App />
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
     </Router>
   </Suspense>,
   document.getElementById("root")

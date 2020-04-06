@@ -30,8 +30,8 @@ const Quote = (props) => {
           </Col>
           <Col
             xs={{ span: 24, offset: 0 }}
-            lg={{ span: 12, offset: 4 }}
-            xl={{ span: 12, offset: 4 }}
+            lg={{ span: 16, offset: 4 }}
+            xl={{ span: 16, offset: 4 }}
             xxl={{ span: 12, offset: 6 }}
           >
             <QuoteCard {...props} quotes={quotes} />
