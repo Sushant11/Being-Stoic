@@ -11,8 +11,16 @@ import stoics from "../db/stoics";
 import quotes from "../db/quotes";
 import QuoteCard from "./items/QuoteCard";
 
-const { Header, Content , Footer} = Layout;
+import ReactGA from "react-ga";
+
+const initializeReactGA = () => {
+  ReactGA.initialize("UA-162898252-1");
+  ReactGA.pageview("/");
+};
+
+const { Header, Content, Footer } = Layout;
 const Quote = (props) => {
+  initializeReactGA();
   return (
     <Fragment>
       <Header>

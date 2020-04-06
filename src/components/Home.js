@@ -8,10 +8,18 @@ import Navbar from "./items/Navbar";
 import "../styles/App.css";
 import Stoic from "./items/Stoic";
 
+import ReactGA from 'react-ga';
+
+const initializeReactGA = () => {
+  ReactGA.initialize('UA-162898252-1');
+  ReactGA.pageview('/');
+}
+
 const { Header, Content, Footer } = Layout;
 
 const Home = (props) => {
   const { stoics } = props;
+  initializeReactGA();
   return (
     <Fragment>
       <Header>
