@@ -2,7 +2,7 @@ export default {
   stoics: [
     {
       id: "zeno",
-      name: "ZENO OF CITUM",
+      name: "ZENO OF CITIUM",
       life: "334–262 BC",
       src: require("../images/zeno.svg"),
     },
