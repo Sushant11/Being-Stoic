@@ -5,7 +5,7 @@ import { withRouter } from "react-router-dom";
 import Navbar from "./items/Navbar";
 import Info from "./items/Info";
 
-import "../styles/App.css";
+import "../styles/App.scss";
 
 import stoics from "../db/stoics";
 import quotes from "../db/quotes";

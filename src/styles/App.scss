@@ -1,3 +1,46 @@
+body.light-mode {
+  background-color: #fff;
+  transition: background-color 0.5s ease;
+}
+
+body.dark-mode {
+  background-color: #10171d;
+  transition: background-color 0.5s ease;
+
+  .ant-layout-header {
+    background-color: #10171d !important;
+  }
+
+  h1.ant-typography{
+    color: white !important;
+    z-index: 3;
+  } 
+  
+  h4.ant-typography{
+    color: white !important;
+  }
+
+  .being-stoic{
+    background: none;
+    transition: background-image 2s ease;
+  }
+
+  .info-name{
+    color: white !important;
+  }
+  .info-date{
+    color: white !important;
+  }
+
+  footer{
+    color: white;
+  }
+}
+
+.ant-layout-header {
+  transition: background-color 0.5s ease;
+}
+
 .being-stoic {
   font-weight: 100;
   letter-spacing: 6px;
@@ -5,6 +48,8 @@
   background-repeat: no-repeat;
   background-position-y: 20px;
   background-position-x: 40px;
+  transition: background-image 2s ease;
+  z-index: 0;
 }
 .sub-heading {
   font-weight: 100 !important;
@@ -112,7 +157,7 @@
   font-size: 1em;
 }
 
-.detail-margin{
+.detail-margin {
   margin-bottom: 1rem;
 }
 

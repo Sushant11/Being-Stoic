@@ -5,7 +5,7 @@ import { Link, withRouter } from "react-router-dom";
 
 import Navbar from "./items/Navbar";
 
-import "../styles/App.css";
+import "../styles/App.scss";
 import Stoic from "./items/Stoic";
 
 import ReactGA from 'react-ga';

@@ -1,11 +1,21 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { Button, Typography, Row, Col, Tooltip } from "antd";
 import { FireOutlined, HomeOutlined, FilterOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
+import useDarkMode from 'use-dark-mode'
 
 const { Title } = Typography;
 
 const Navbar = () => {
+  const [darkState, setDarkState] = useState(false);
+  const darkMode = useDarkMode(false);
+
+  const handleDarkMode = () => {
+    setDarkState(!darkState);
+    darkState ?  darkMode.enable() : darkMode.disable()
+    console.log('darkMode :>> ', darkState);
+  }
+
   return (
     <Fragment>
       <Row>
@@ -42,7 +52,7 @@ const Navbar = () => {
         >
           <Tooltip title="Toggle Night Mode">
             <span className="fire float-icon">
-              <Button shape="circle" icon={<FireOutlined />} size="default" />{" "}
+              <Button shape="circle" icon={<FireOutlined />} size="default" onClick={handleDarkMode} />{" "}
             </span>
           </Tooltip>
           {/* <Tooltip title="Filter">
