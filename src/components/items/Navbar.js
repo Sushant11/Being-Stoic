@@ -7,13 +7,12 @@ import useDarkMode from 'use-dark-mode'
 const { Title } = Typography;
 
 const Navbar = () => {
-  const [darkState, setDarkState] = useState(false);
-  const darkMode = useDarkMode(false);
-
+  const [darkState, setDarkState] = useState(true);
+  const darkMode = useDarkMode(true);
+  
   const handleDarkMode = () => {
     setDarkState(!darkState);
     darkState ?  darkMode.enable() : darkMode.disable()
-    console.log('darkMode :>> ', darkState);
   }
 
   return (
